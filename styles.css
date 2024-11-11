@@ -1,0 +1,132 @@
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+/* Loader styling */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+  flex-direction: column;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f4f6;
+  border-top: 5px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #007bff;
+}
+
+.subheading {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Typing text effect */
+.typing-text {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Grid and Box styling */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.box {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.box-link {
+  display: block;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+/* Call-to-action button */
+.cta {
+  margin-top: 30px;
+}
+
+.cta-button {
+  background-color: #25D366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #20b358;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #666;
+}
